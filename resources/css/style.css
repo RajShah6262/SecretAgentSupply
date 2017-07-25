@@ -1,289 +1,250 @@
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.65rem;
-    color: white;
-    background-color: black;
-    margin: 0;
-    padding: 0;
+  font-family: Helvetica;
 }
 
-h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+body,
+li a {
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.site-width {
+  width: 960px;
+  margin: 0 auto;
 }
 
 h2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  font-size: 1rem;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+h1 {
+  font-size: 2rem;
 }
 
-
-/* Full-Width Site Container */
-
-#sitecontainer {
-    margin: 0 auto;
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
-
-/* Header Bar */
-
-header {
-    display: flex;
-    align-items: center;
-    /*960px*/
-    width: 53.3rem;
-    margin: 0 auto;
-    background-color: black;
-}
-
-.headerflexbox {
-    display: flex;
-    align-items: center;
-}
-
-header p {
-    padding: .66rem 1rem;
-}
-
-header img {
-    align-self: center;
-    height: 1.5rem;
-    margin: 0 0 0 .5rem;
-}
-
-
-/* Hero Graphic */
-
-#herographic {
-    background: transparent url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg") center;
-    background-size: cover;
-    height: 25rem;
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.heroflex {
-    /*960px*/
-    width: 53.3rem;
-    margin: 9rem 0 0 0;
-}
-
-.blackbox {
-    padding: 2rem 3rem;
-    width: 20rem;
-    text-align: left;
-    background-color: black;
-}
-
-.blackbox h2 {
-    margin: 0 0 .25rem 0;
-}
-
-
-/* Navigation Menu */
-
-.navflex {
-    background: firebrick;
-}
-
-.redbar {
-    padding: .75rem 0;
-    margin: 0 auto;
-    /*960px*/
-    width: 53.3rem;
-    background-color: firebrick;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.redmenu {
-    padding: .75rem 0;
-    margin: 0 auto;
-    /*960px*/
-    width: 100%;
-    background-color: firebrick;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Gadgets & Info Full-Width Container */
-
-.fullsizecontainer {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* Gadgets */
-
-.gadgetrow {
-    /*960px*/
-    width: 53.3rem;
-    margin: 0 auto;
-    padding: 3rem 0 0 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.gadgetcell {
-    width: 30%;
-    border: 4px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.gadgetcell img {
-    max-width: 100%;
-    height: 9rem;
-    display: block;
-    padding: 2rem;
-    object-fit: contain;
-}
-
-.gadgetcell p {
-    background-color: black;
-    text-align: center;
-    white-space: nowrap;
-    padding: .5rem 0;
-}
-
-
-/* Information */
-
-.infoflex {
-    margin: 3rem auto 4rem auto;
-    /*960px*/
-    width: 53.3rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.infobox {
-    background-color: black;
-    text-align: left;
-    width: 35%;
-    padding: 1rem 0 0 0;
-}
-
-.infobox span {
-    margin: 0 0 0 2rem;
-}
-
-.infobox p {
-    padding: 0;
-    margin: 1rem 0 0 0;
-    background-color: white;
-    color: black;
-}
-
-
-/* Footer */
-
+.logo-banner,
+.feature-container,
+ul,
+.item,
+.item-height,
+.store,
+.information,
 footer {
-    margin: 0 auto;
-    /*960px*/
-    width: 53.3rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
 }
 
+.logo-banner,
+.item,
+.item-height,
+footer {
+  align-items: center;
+}
+
+ul,
+.store,
+.information {
+  justify-content: space-between;
+}
+
+header .full-width,
+.item h2,
+.information h2,
+footer {
+  background-color: black;
+}
+
+nav.full-width,
+.store {
+  margin-bottom: 3rem;
+}
+
+/********** Header **********/
+.logo-banner {
+  height: 1.5rem;
+  padding: .66rem 0;
+}
+
+.logo-banner img {
+  margin: 0 1rem 0 .5rem;
+  height: 100%;
+  width: auto;
+}
+
+.feature-container {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24rem;
+}
+
+.feature-item {
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  width: 20rem;
+}
+
+.feature-item h2 {
+  margin-bottom: .25rem;
+}
+
+nav.full-width {
+  background-color: firebrick;
+  margin-bottom: 3rem;
+}
+
+ul {
+  padding: .75rem 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.small-screen {
+  display: none;
+}
+
+/********** Store **********/
+.item {
+  border: solid 4px black;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.item-height {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.item img {
+  max-width: 9rem;
+}
+
+.item h2 {
+  padding: .5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+/********** Info **********/
+.information {
+  margin-bottom: 4rem;
+}
+
+.location,
+.hours {
+  width: 35%;
+}
+
+.information h2 {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.information p {
+  color: black;
+  padding-top: .25rem;
+}
+
+/********** Footer **********/
+footer {
+  height: 5rem;
+}
+
+/********** Less than 1024 px **********/
 @media only screen and (max-width: 1024px) {
-    header,
-    footer,
-    .heroflex,
-    .gadgetrow,
-    .infoflex {
-        width: 100%;
-    }
-    .redbar {
-        display: none;
-    }
-    .redmenu {
-        display: flex;
-    }
-    .gadgetcell:last-child {
-        display: none;
-    }
-    .gadgetcell {
-        width: 47%;
-    }
+
+  .site-width {
+    width: 100%;
+  }
+
+  /********** Nav **********/
+
+  ul {
+    justify-content: center;
+  }
+  .site-width li,
+  .store .item:nth-child(3) {
+    display: none;
+  }
+  li.small-screen {
+    display: inline;
+  }
+
+  /********** Store **********/
+
+  .store {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 47%;
+  }
+
 }
 
-@media only screen and (max-width: 470px) {
-    header,
-    footer,
-    .heroflex,
-    .gadgetrow,
-    .infoflex {
-        width: 100%;
-    }
-    #herographic {
-        height: 15.75rem;
-    }
-    .heroflex {
-        margin: 10rem 0 0 0;
-    }
-    .blackbox {
-        padding: 1rem 2rem;
-        width: 100%;
-        text-align: left;
-    }
-    .blackbox h2 {
-        font-size: .77rem;
-    }
-    .blackbox h1 {
-        font-size: 1rem;
-    }
-    .redbar {
-        display: none;
-    }
-    .redmenu {
-        width: 100%;
-        display: flex;
-    }
-    .gadgetrow {
-        justify-content: center;
-    }
-    .gadgetcell {
-        display: none;
-    }
-    .gadgetcell:first-child {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-    }
-    .infoflex {
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    footer {
-        justify-content: center;
-    }
+/********** Less than 480 px **********/
+@media only screen and (max-width: 480px) {
+  .item,
+  .location,
+  .hours {
+    width: 90%;
+  }
+
+  .store,
+  .information {
+    justify-content: center;
+  }
+  /********** Header **********/
+
+  .feature-container {
+    height: 15rem;
+  }
+  .feature-item {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .feature-item h2 {
+    font-size: .77rem;
+  }
+  .feature-item h1 {
+    font-size: 1rem;
+  }
+
+  /********** Store **********/
+
+  .store .item:nth-child(2) {
+    display: none;
+  }
+
+  /********** info **********/
+  .information {
+    flex-wrap: wrap;
+  }
+  .location {
+    margin-bottom: .5rem;
+  }
+
+  /********** Footer **********/
+  footer h2 {
+    text-align: center;
+  }
 }
